@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CPNavgationController"
-  s.version      = "1.0.2"
+  s.version      = "1.0.4"
   s.summary      = "test"
   s.homepage     = "https://github.com/cp271007323/CPNavgationController"
   s.license      = "MIT"
@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.frameworks = "Foundation", "UIKit"
   s.source = { :git => "https://github.com/cp271007323/CPNavgationController.git", :tag => s.version }
   s.source_files  = "CPNavgationController" , "CPNavgationController/*.{h,m}"
-  s.resources = "CPNavgationController/*.png"
+  s.resources = "CPNavgationController/*.bundle"
 end
