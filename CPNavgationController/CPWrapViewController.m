@@ -10,7 +10,7 @@
 #import "CPWrapNavgationController.h"
 #import "UIViewController+CPNavgationExtension.h"
 
-#define kDefaultBackImageName @"nav_return"
+#define kDefaultBackImageName @"fanhui@2x"
 
 @interface CPWrapViewController ()
 
@@ -59,7 +59,7 @@ static NSValue *cp_tabBarRectValue;
     if (self.rootViewController.cp_isPrenset)
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setImage:[UIImage imageNamed:@"icon_login_close"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"guanbi@2x"] forState:UIControlStateNormal];
         btn.frame = CGRectMake(0, 0, 40, 40);
         [btn addTarget:self action:@selector(dissMiss) forControlEvents:UIControlEventTouchUpInside];
         self.rootViewController.navigationItem.leftBarButtonItems = @[[[UIBarButtonItem alloc] initWithCustomView:btn]];

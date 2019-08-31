@@ -11,7 +11,7 @@
 #import "UIViewController+CPNavgationExtension.h"
 #import "CPWrapViewController.h"
 
-#define kDefaultBackImageName @"nav_return"
+#define kDefaultBackImageName @"fanhui@2x"
 
 @interface CPWrapNavgationController ()
 
