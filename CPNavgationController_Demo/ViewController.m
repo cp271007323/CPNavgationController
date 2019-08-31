@@ -27,10 +27,10 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-//    [self.navigationController pushViewController:[ViewController new] animated:YES];
-    ViewController *vc = [ViewController new];
-    vc.cp_isPrenset = YES;
-    [self presentViewController:[CPNavgationController rootViewController:vc] animated:YES completion:nil];
+    [self.navigationController pushViewController:[ViewController new] animated:YES];
+//    ViewController *vc = [ViewController new];
+//    vc.cp_isPrenset = YES;
+//    [self presentViewController:[CPNavgationController rootViewController:vc] animated:YES completion:nil];
     
 }
 
