@@ -1,5 +1,5 @@
 //
-//  CPNavigationController.h
+//  CPNavgationController.h
 //  测试
 //
 //  Created by lk03 on 2017/8/7.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIViewController+CPNavigationExtension.h"
+#import "UIViewController+CPNavgationExtension.h"
 
-@interface CPNavigationController : UINavigationController
+@interface CPNavgationController : UINavigationController
 
 @property (nonatomic, strong) UIImage *backButtonImage;
 

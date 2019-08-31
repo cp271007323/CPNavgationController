@@ -1,5 +1,5 @@
 //
-//  CPWrapNavigationController.h
+//  CPWrapNavgationController.h
 //  测试
 //
 //  Created by lk03 on 2017/8/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CPWrapNavigationController : UINavigationController
+@interface CPWrapNavgationController : UINavigationController
 
 @end

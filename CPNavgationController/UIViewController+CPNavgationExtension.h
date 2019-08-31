@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class CPNavigationController;
+@class CPNavgationController;
 
 @interface UIViewController (CPNavigationExtension)
 
@@ -18,7 +18,7 @@
 
 @property (nonatomic , assign) BOOL cp_popGestureDisenabled;
 
-@property (nonatomic , strong) CPNavigationController *cp_navigationController;
+@property (nonatomic , strong) CPNavgationController *cp_navigationController;
 
 - (UIImageView *)hiddenHairlineImageViewUnder:(UIView *)view;
 @end

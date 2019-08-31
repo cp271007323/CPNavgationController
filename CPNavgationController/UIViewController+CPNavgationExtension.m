@@ -6,8 +6,8 @@
 //  Copyright © 2017年 chenp. All rights reserved.
 //
 
-#import "UIViewController+CPNavigationExtension.h"
-#import "CPNavigationController.h"
+#import "UIViewController+CPNavgationExtension.h"
+#import "CPNavgationController.h"
 #import <objc/runtime.h>
 
 @implementation UIViewController (CPNavigationExtension)
@@ -36,11 +36,11 @@
     objc_setAssociatedObject(self, @selector(cp_popGestureDisenabled), @(cp_popGestureDisenabled), OBJC_ASSOCIATION_RETAIN);
 }
 
-- (CPNavigationController *)cp_navigationController{
+- (CPNavgationController *)cp_navigationController{
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setCp_navigationController:(CPNavigationController *)cp_navigationController{
+- (void)setCp_navigationController:(CPNavgationController *)cp_navigationController{
     objc_setAssociatedObject(self, @selector(cp_navigationController), cp_navigationController, OBJC_ASSOCIATION_ASSIGN);
 }
 

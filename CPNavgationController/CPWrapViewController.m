@@ -7,8 +7,8 @@
 //
 
 #import "CPWrapViewController.h"
-#import "CPWrapNavigationController.h"
-#import "UIViewController+CPNavigationExtension.h"
+#import "CPWrapNavgationController.h"
+#import "UIViewController+CPNavgationExtension.h"
 
 #define kDefaultBackImageName @"nav_return"
 
@@ -21,7 +21,7 @@ static NSValue *cp_tabBarRectValue;
 @implementation CPWrapViewController
 
 + (CPWrapViewController *)wrapViewControllerWithViewController:(UIViewController *)viewController{
-    CPWrapNavigationController *wrapNavController = [[CPWrapNavigationController alloc] init];
+    CPWrapNavgationController *wrapNavController = [[CPWrapNavgationController alloc] init];
     wrapNavController.viewControllers = @[viewController];
     CPWrapViewController *wrapViewController = [[CPWrapViewController alloc] init];
     [wrapViewController.view addSubview:wrapNavController.view];
@@ -95,7 +95,7 @@ static NSValue *cp_tabBarRectValue;
 }
 
 - (UIViewController *)rootViewController {
-    CPWrapNavigationController *wrapNavController = self.childViewControllers.firstObject;
+    CPWrapNavgationController *wrapNavController = self.childViewControllers.firstObject;
     return wrapNavController.viewControllers.firstObject;
 }
 

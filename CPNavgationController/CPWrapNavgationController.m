@@ -1,23 +1,23 @@
 //
-//  CPWrapNavigationController.m
+//  CPWrapNavgationController.m
 //  测试
 //
 //  Created by lk03 on 2017/8/7.
 //  Copyright © 2017年 chenp. All rights reserved.
 //
 
-#import "CPWrapNavigationController.h"
-#import "CPNavigationController.h"
-#import "UIViewController+CPNavigationExtension.h"
+#import "CPWrapNavgationController.h"
+#import "CPNavgationController.h"
+#import "UIViewController+CPNavgationExtension.h"
 #import "CPWrapViewController.h"
 
 #define kDefaultBackImageName @"nav_return"
 
-@interface CPWrapNavigationController ()
+@interface CPWrapNavgationController ()
 
 @end
 
-@implementation CPWrapNavigationController
+@implementation CPWrapNavgationController
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated{
     return [self.navigationController popViewControllerAnimated:animated];
@@ -28,13 +28,13 @@
 }
 
 - (NSArray<UIViewController *> *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    CPNavigationController *cp_NavigationController = viewController.cp_navigationController;
+    CPNavgationController *cp_NavigationController = viewController.cp_navigationController;
     NSInteger index = [cp_NavigationController.cp_viewControllers indexOfObject:viewController];
     return [self.navigationController popToViewController:cp_NavigationController.viewControllers[index] animated:animated];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    viewController.cp_navigationController = (CPNavigationController *)self.navigationController;
+    viewController.cp_navigationController = (CPNavgationController *)self.navigationController;
     viewController.cp_fullScreenPopGestureEnabled = viewController.cp_navigationController.fullScreenPopGestureEnabled;
     
     UIImage *defaultBackImage = viewController.cp_navigationController.backButtonImage;

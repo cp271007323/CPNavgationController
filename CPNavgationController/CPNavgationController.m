@@ -1,16 +1,16 @@
 //
-//  CPNavigationController.m
+//  CPNavgationController.m
 //  测试
 //
 //  Created by lk03 on 2017/8/7.
 //  Copyright © 2017年 chenp. All rights reserved.
 //
 
-#import "CPNavigationController.h"
-#import "UIViewController+CPNavigationExtension.h"
+#import "CPNavgationController.h"
+#import "UIViewController+CPNavgationExtension.h"
 #import "CPWrapViewController.h"
 
-@interface CPNavigationController () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
+@interface CPNavgationController () <UINavigationControllerDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIPanGestureRecognizer *popPanGesture;
 
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation CPNavigationController
+@implementation CPNavgationController
 
 + (instancetype)rootViewController:(__kindof UIViewController *)viewController{
     return [[self alloc] initWithRootViewController:viewController];
