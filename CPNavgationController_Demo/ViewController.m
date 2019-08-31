@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CPNavgationController.h"
+#import "NSBundle+CPNavgationController.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor greenColor];
     
-    
+    NSLog(@"%@",[NSBundle mj_arrowImage]);
     
 }
 

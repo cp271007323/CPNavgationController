@@ -10,8 +10,7 @@
 #import "CPNavgationController.h"
 #import "UIViewController+CPNavgationExtension.h"
 #import "CPWrapViewController.h"
-
-#define kDefaultBackImageName @"fanhui@2x"
+#import "NSBundle+CPNavgationController.h"
 
 @interface CPWrapNavgationController ()
 
@@ -40,9 +39,7 @@
     UIImage *defaultBackImage = viewController.cp_navigationController.backButtonImage;
     if (!defaultBackImage)
     {
-        NSString *strResourcesBundle = [[NSBundle mainBundle] pathForResource:@"CPNavgationController" ofType:@"bundle"];
-        NSString *strC = [[NSBundle bundleWithPath:strResourcesBundle] pathForResource:@"fanhui@2x" ofType:@"png"];
-        defaultBackImage = [UIImage imageWithContentsOfFile:strC];
+        defaultBackImage = [NSBundle cp_backImage];
     }
     
     if (self.childViewControllers.count > 0)

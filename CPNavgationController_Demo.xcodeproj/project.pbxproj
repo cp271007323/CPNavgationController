@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E720C811231A2814000B0A94 /* CPNavgationController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E720C810231A2814000B0A94 /* CPNavgationController.bundle */; };
+		E720C817231A5A52000B0A94 /* NSBundle+CPNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E720C816231A5A52000B0A94 /* NSBundle+CPNavgationController.m */; };
 		E79D83C0231A099B00F8CADE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D83BF231A099B00F8CADE /* AppDelegate.m */; };
 		E79D83C3231A099B00F8CADE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D83C2231A099B00F8CADE /* ViewController.m */; };
 		E79D83C6231A099B00F8CADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79D83C4231A099B00F8CADE /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		E720C810231A2814000B0A94 /* CPNavgationController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CPNavgationController.bundle; sourceTree = "<group>"; };
+		E720C815231A5A52000B0A94 /* NSBundle+CPNavgationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+CPNavgationController.h"; sourceTree = "<group>"; };
+		E720C816231A5A52000B0A94 /* NSBundle+CPNavgationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+CPNavgationController.m"; sourceTree = "<group>"; };
 		E79D83BB231A099B00F8CADE /* CPNavgationController_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPNavgationController_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79D83BE231A099B00F8CADE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E79D83BF231A099B00F8CADE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				E79D83DA231A09D700F8CADE /* UIViewController+CPNavgationExtension.h */,
 				E79D83DB231A09D700F8CADE /* CPNavgationController.m */,
 				E79D83DC231A09D700F8CADE /* CPWrapNavgationController.h */,
+				E720C815231A5A52000B0A94 /* NSBundle+CPNavgationController.h */,
+				E720C816231A5A52000B0A94 /* NSBundle+CPNavgationController.m */,
 				E720C810231A2814000B0A94 /* CPNavgationController.bundle */,
 			);
 			path = CPNavgationController;
@@ -179,6 +184,7 @@
 				E79D83DD231A09D700F8CADE /* UIViewController+CPNavgationExtension.m in Sources */,
 				E79D83E0231A09D700F8CADE /* CPNavgationController.m in Sources */,
 				E79D83DE231A09D700F8CADE /* CPWrapNavgationController.m in Sources */,
+				E720C817231A5A52000B0A94 /* NSBundle+CPNavgationController.m in Sources */,
 				E79D83DF231A09D700F8CADE /* CPWrapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
