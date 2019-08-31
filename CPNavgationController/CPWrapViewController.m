@@ -58,7 +58,7 @@ static NSValue *cp_tabBarRectValue;
     if (self.rootViewController.cp_isPrenset)
     {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setImage:[[NSBundle cp_closeImage] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+        [btn setImage:[NSBundle cp_closeImage] forState:UIControlStateNormal];
         btn.frame = CGRectMake(0, 0, 40, 40);
         [btn addTarget:self action:@selector(dissMiss) forControlEvents:UIControlEventTouchUpInside];
         self.rootViewController.navigationItem.leftBarButtonItems = @[[[UIBarButtonItem alloc] initWithCustomView:btn]];

@@ -25,7 +25,7 @@
 {
     static UIImage *arrowImage = nil;
     if (arrowImage == nil) {
-        arrowImage = [[UIImage imageWithContentsOfFile:[[self cp_refreshBundle] pathForResource:@"fanhui@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        arrowImage = [UIImage imageWithContentsOfFile:[[self cp_refreshBundle] pathForResource:@"fanhui@2x" ofType:@"png"]];
     }
     return arrowImage;
 }
@@ -34,7 +34,7 @@
 {
     static UIImage *arrowImage = nil;
     if (arrowImage == nil) {
-        arrowImage = [[UIImage imageWithContentsOfFile:[[self cp_refreshBundle] pathForResource:@"guanbi@2x" ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        arrowImage = [UIImage imageWithContentsOfFile:[[self cp_refreshBundle] pathForResource:@"guanbi@2x" ofType:@"png"]];
     }
     return arrowImage;
 }

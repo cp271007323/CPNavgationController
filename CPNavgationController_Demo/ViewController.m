@@ -22,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor greenColor];
     
-    NSLog(@"%@",[NSBundle mj_arrowImage]);
+    
     
 }
 
