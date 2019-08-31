@@ -10,8 +10,6 @@
 #import "CPWrapNavgationController.h"
 #import "UIViewController+CPNavgationExtension.h"
 
-#define kDefaultBackImageName @"fanhui@2x"
-
 @interface CPWrapViewController ()
 
 @end
@@ -58,8 +56,10 @@ static NSValue *cp_tabBarRectValue;
 - (void)addPresentBackItem{
     if (self.rootViewController.cp_isPrenset)
     {
+        NSString *strResourcesBundle = [[NSBundle mainBundle] pathForResource:@"CPNavgationController" ofType:@"bundle"];
+        NSString *strC = [[NSBundle bundleWithPath:strResourcesBundle] pathForResource:@"guanbi@2x" ofType:@"png"];
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setImage:[UIImage imageNamed:@"guanbi@2x"] forState:UIControlStateNormal];
+        [btn setImage:[[UIImage imageWithContentsOfFile:strC] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
         btn.frame = CGRectMake(0, 0, 40, 40);
         [btn addTarget:self action:@selector(dissMiss) forControlEvents:UIControlEventTouchUpInside];
         self.rootViewController.navigationItem.leftBarButtonItems = @[[[UIBarButtonItem alloc] initWithCustomView:btn]];

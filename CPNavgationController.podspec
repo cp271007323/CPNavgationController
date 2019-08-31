@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CPNavgationController"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "test"
   s.homepage     = "https://github.com/cp271007323/CPNavgationController"
   s.license      = "MIT"

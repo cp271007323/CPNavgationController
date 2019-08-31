@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E720C811231A2814000B0A94 /* CPNavgationController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E720C810231A2814000B0A94 /* CPNavgationController.bundle */; };
 		E79D83C0231A099B00F8CADE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D83BF231A099B00F8CADE /* AppDelegate.m */; };
 		E79D83C3231A099B00F8CADE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D83C2231A099B00F8CADE /* ViewController.m */; };
 		E79D83C6231A099B00F8CADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79D83C4231A099B00F8CADE /* Main.storyboard */; };
@@ -17,11 +18,10 @@
 		E79D83DE231A09D700F8CADE /* CPWrapNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D83D8231A09D700F8CADE /* CPWrapNavgationController.m */; };
 		E79D83DF231A09D700F8CADE /* CPWrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D83D9231A09D700F8CADE /* CPWrapViewController.m */; };
 		E79D83E0231A09D700F8CADE /* CPNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D83DB231A09D700F8CADE /* CPNavgationController.m */; };
-		E79D83E8231A19D400F8CADE /* fanhui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E79D83E7231A19D400F8CADE /* fanhui@2x.png */; };
-		E79D83EA231A1A3C00F8CADE /* guanbi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E79D83E9231A1A3C00F8CADE /* guanbi@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E720C810231A2814000B0A94 /* CPNavgationController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CPNavgationController.bundle; sourceTree = "<group>"; };
 		E79D83BB231A099B00F8CADE /* CPNavgationController_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPNavgationController_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79D83BE231A099B00F8CADE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E79D83BF231A099B00F8CADE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,8 +40,6 @@
 		E79D83DA231A09D700F8CADE /* UIViewController+CPNavgationExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CPNavgationExtension.h"; sourceTree = "<group>"; };
 		E79D83DB231A09D700F8CADE /* CPNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNavgationController.m; sourceTree = "<group>"; };
 		E79D83DC231A09D700F8CADE /* CPWrapNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPWrapNavgationController.h; sourceTree = "<group>"; };
-		E79D83E7231A19D400F8CADE /* fanhui@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fanhui@2x.png"; sourceTree = "<group>"; };
-		E79D83E9231A1A3C00F8CADE /* guanbi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guanbi@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +89,6 @@
 		E79D83D4231A09D700F8CADE /* CPNavgationController */ = {
 			isa = PBXGroup;
 			children = (
-				E79D83E7231A19D400F8CADE /* fanhui@2x.png */,
-				E79D83E9231A1A3C00F8CADE /* guanbi@2x.png */,
 				E79D83D5231A09D700F8CADE /* CPWrapViewController.h */,
 				E79D83D6231A09D700F8CADE /* UIViewController+CPNavgationExtension.m */,
 				E79D83D7231A09D700F8CADE /* CPNavgationController.h */,
@@ -101,6 +97,7 @@
 				E79D83DA231A09D700F8CADE /* UIViewController+CPNavgationExtension.h */,
 				E79D83DB231A09D700F8CADE /* CPNavgationController.m */,
 				E79D83DC231A09D700F8CADE /* CPWrapNavgationController.h */,
+				E720C810231A2814000B0A94 /* CPNavgationController.bundle */,
 			);
 			path = CPNavgationController;
 			sourceTree = "<group>";
@@ -162,10 +159,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E720C811231A2814000B0A94 /* CPNavgationController.bundle in Resources */,
 				E79D83CB231A099C00F8CADE /* LaunchScreen.storyboard in Resources */,
-				E79D83EA231A1A3C00F8CADE /* guanbi@2x.png in Resources */,
 				E79D83C8231A099C00F8CADE /* Assets.xcassets in Resources */,
-				E79D83E8231A19D400F8CADE /* fanhui@2x.png in Resources */,
 				E79D83C6231A099B00F8CADE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

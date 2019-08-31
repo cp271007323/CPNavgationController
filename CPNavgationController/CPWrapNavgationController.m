@@ -40,7 +40,9 @@
     UIImage *defaultBackImage = viewController.cp_navigationController.backButtonImage;
     if (!defaultBackImage)
     {
-        defaultBackImage = [UIImage imageNamed:kDefaultBackImageName];
+        NSString *strResourcesBundle = [[NSBundle mainBundle] pathForResource:@"CPNavgationController" ofType:@"bundle"];
+        NSString *strC = [[NSBundle bundleWithPath:strResourcesBundle] pathForResource:@"fanhui@2x" ofType:@"png"];
+        defaultBackImage = [UIImage imageWithContentsOfFile:strC];
     }
     
     if (self.childViewControllers.count > 0)
