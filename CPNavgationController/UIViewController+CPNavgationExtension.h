@@ -21,4 +21,11 @@
 @property (nonatomic , strong) CPNavgationController *cp_navigationController;
 
 - (UIImageView *)hiddenHairlineImageViewUnder:(UIView *)view;
+
+/// 从当前的导航跳转中移除当前控制器
+- (void)removeCurrentViewControFromCP_viewControllers;
+
+/// 从当前的导航跳转中移除全部控制器，仅留RootViewController
+- (void)removeAllViewControFromCP_viewControllers;
+
 @end

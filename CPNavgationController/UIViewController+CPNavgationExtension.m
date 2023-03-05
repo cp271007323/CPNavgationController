@@ -64,4 +64,25 @@
     
 }
 
+- (void)removeCurrentViewControFromCP_viewControllers
+{
+    __weak UIViewController *weakself = self;
+    NSMutableArray *controllersmArr = [[NSMutableArray alloc]initWithArray:self.cp_navigationController.viewControllers];
+    [self.cp_navigationController.cp_viewControllers enumerateObjectsUsingBlock:^(UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        __strong UIViewController *strongself = weakself;
+        if ([obj isEqual:strongself]) {
+            [controllersmArr removeObjectAtIndex:idx];
+            *stop = YES;
+        }
+    }];
+    self.cp_navigationController.viewControllers = controllersmArr;
+}
+
+- (void)removeAllViewControFromCP_viewControllers
+{
+  NSMutableArray *controllersmArr = [[NSMutableArray alloc] initWithObjects:self.cp_navigationController.viewControllers.firstObject,self.cp_navigationController.viewControllers.lastObject, nil];
+  self.cp_navigationController.viewControllers = controllersmArr;
+}
+
+
 @end

@@ -110,7 +110,7 @@
 - (NSArray<UIViewController *> *)cp_viewControllers{
     NSMutableArray *viewcontrollers = [NSMutableArray array];
     for (CPWrapViewController *wrapViewController in self.viewControllers)
-        {
+    {
         [viewcontrollers addObject:wrapViewController.rootViewController];
     }
     return viewcontrollers.copy;
