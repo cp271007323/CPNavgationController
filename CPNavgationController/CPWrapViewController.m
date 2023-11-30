@@ -12,7 +12,7 @@
 #import "NSBundle+CPNavgationController.h"
 
 @interface CPWrapViewController ()
-
+@property (nonatomic , assign) CPWrapNavgationController *contentWrapNavController;
 @end
 
 static NSValue *cp_tabBarRectValue;
@@ -23,7 +23,7 @@ static NSValue *cp_tabBarRectValue;
     CPWrapNavgationController *wrapNavController = [[CPWrapNavgationController alloc] init];
     wrapNavController.viewControllers = @[viewController];
     CPWrapViewController *wrapViewController = [[CPWrapViewController alloc] init];
-    [wrapViewController.view addSubview:wrapNavController.view];
+    wrapViewController.contentWrapNavController = wrapNavController;
     [wrapViewController addChildViewController:wrapNavController];
     return wrapViewController;
 }
@@ -46,6 +46,12 @@ static NSValue *cp_tabBarRectValue;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    if (![self.view.subviews containsObject:self.contentWrapNavController.view])
+    {
+        [self.view addSubview:self.contentWrapNavController.view];
+    }
+    
     self.tabBarController.tabBar.translucent = YES;
     if (self.tabBarController && !self.tabBarController.tabBar.hidden && cp_tabBarRectValue)
     {
